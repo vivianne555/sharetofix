@@ -1,0 +1,18 @@
+//img[@class="logo-bank"]
+//div[@id="button-download-app"]
+//button[@aria-haspopup="true"]
+//h1[@id="kc-page-title"]
+//label[contains(text(),'UserID')]
+//button[@aria-label="Clear input"]/ancestor::div[@class="form-group mb-4"]/div/div/label
+//input[@id="password"]
+//img[@class="hidden iconHide"]
+//button[@id="forgotPassButton"]
+//button[@id="supportButton"]
+
+//label[contains(text(),'Tên đăng nhập')]/parent::div/parent::div[@class="w-full default-input"]/following-sibling::div[@class="mt-2"]/span
+////label[contains(text(),'Mật khẩu')]/parent::div/parent::div[@class="w-full default-input"]/following-sibling::div[@class="mt-2"]/span[contains(text(),'Vui lòng')]
+
+//a[@href="/bidvdirectsit/"]
+//p[contains(text(),'Trang chủ')]//ancestor::li[@_ngcontent-ng-c1136398428]/following-sibling::li[@_ngcontent-ng-c1136398428]//p[contains(text(),'Tài khoản')]
+
+////button[contains(text(),'Khởi tạo giao dịch')]
