@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
 import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main1 {
+// phai co thoi gian cho
+// in ra size() của locator USER_NAME
+// tìm xem attribute có id="username" => sau in ra " đây là thẻ input"
+public class LamlaiBT1 {
     public static void main(String[] args) {
         String USER_NAME = "//input";
         WebDriver driver = new ChromeDriver();
@@ -20,24 +22,20 @@ public class Main1 {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        List<WebElement> name = driver.findElements(By.xpath(USER_NAME));
-        System.out.println("Amout: " + name.size());
-        for (int i = 0; i < name.size(); i++) {
-            String attribute = name.get(i).getAttribute("id");
+            List<WebElement> name1 = driver.findElements(By.xpath(USER_NAME));
+            System.out.println("Amount = " + name1.size());
+        for (WebElement webElement : name1) {
+            String attribute = webElement.getAttribute("id");
             assert attribute != null;
             if (attribute.equals("username")) {
-                System.out.println("day la the input: " + attribute);
-               // break;
+                System.out.println("Day la the input");
             } else {
                 System.out.println(attribute);
-            };
+            }
+            ;
+
 
         }
-        ;
-        // phai co thoi gian cho
-        // in ra size() của locator USER_NAME
-        // tìm xem attribute có id="username" => sau in ra " đây là thẻ input"
-
         driver.close();
     }
 }
