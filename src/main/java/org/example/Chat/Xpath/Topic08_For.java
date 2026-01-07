@@ -31,15 +31,16 @@ public class Topic08_For {
 //Lưu ý kiểm tra một số chẵn bằng cách thực hiện phép chia dư số đó với 2 - nếu kết quả phép chia dư là 0
 // thì đó là số chẵn
 //        int[] list = {1,2,3,4,5,6,7,8,9,10};
-//        int sum = 0;
+//        int sum = list[0];
 //        for ( int i = 0; i < list.length ; i++){
+//            System.out.println("in ra" + list[i]);
 //            if ( list[i] % 2 == 0) {
 //                System.out.println(list[i] + " ");
 //                sum = sum + list[i];
 //            }
 //        }
 //        System.out.println("tổng số chẵn trong chuỗi = " + sum);
-        //cách 2:
+//        cách 2:
 //        int sum = 0;
 //        for (int i = 1; i <= 10; i++){
 //            if ( i % 2 == 0){
@@ -60,7 +61,7 @@ public class Topic08_For {
 //          for ( int i = a; i <= b; i++){
 //              sum = sum + i;
 //          }
-//        System.out.println("tổng của a & b là: "+ sum);
+//        System.out.println("tong cac so tu a toi b la: "+ sum);
 
 //• 5 - Viết chương trình nhập vào từ bàn phím số nguyên n và thực hiện hiển thị ra tổng các số lẻ từ O tới n
 //• Ví dụ nếu nhập n = 7 thì chương trình sẽ hiển thị ra màn hình: 16
