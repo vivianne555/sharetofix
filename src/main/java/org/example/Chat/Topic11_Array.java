@@ -1,5 +1,7 @@
 package org.example.Chat;
 
+import java.util.ArrayList;
+
 public class Topic11_Array {
     public static void main(String[] args) {
 //        1 - Cho một mảng các số nguyên
@@ -69,7 +71,6 @@ public class Topic11_Array {
 //Thuộc tính: ID, Name, Age, Score
 //• Hàm khởi tạo giá trị cho các thuộc tính
 //• Phương thức: displayed() - in ra console ID/ Name/ Age/ Score (Point)
-
 
     }
 }
