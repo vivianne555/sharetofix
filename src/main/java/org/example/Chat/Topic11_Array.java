@@ -58,19 +58,14 @@ public class Topic11_Array {
 //• Hãy in ra TỔNG và TRUNG BÌNH CỘNG của các giá trị phần tử trong mảng
 //• Tổng các phần tử trong mảng
 //• Trung bình cộng = Tổng/ số lượng
-//        int[] arr = {3, 5, 7, 30, 10, 5, 8, 23, 0, -5};
-//        int sum = 0;
-//        for(int i = 0; i < arr.length; i++){
-//           sum = sum+ arr[i];
-//        }
+        int[] arr = {3, 5, 7, 30, 10, 5, 8, 23, 0, -5};
+        int sum = 0;
+        for(int i = 0; i < arr.length; i++){
+           sum = sum+ arr[i];
+        }
 //        //ep kieu int sum => double sum
-//        double total = (double) sum / arr.length;
+        double total = (double) sum / arr.length;
 //        System.out.println(total);
-
-//• 7 - Viết chương trình hiển thị thông tin học sinh với
-//Thuộc tính: ID, Name, Age, Score
-//• Hàm khởi tạo giá trị cho các thuộc tính
-//• Phương thức: displayed() - in ra console ID/ Name/ Age/ Score (Point)
 
     }
 }
