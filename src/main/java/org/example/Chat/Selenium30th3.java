@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 public class Selenium30th3 {package selenium_api;
 
-
     public class Topic_03_WebBrowser_WebElement_APIs {
         // Khai báo biến driver
         WebDriver driver;
