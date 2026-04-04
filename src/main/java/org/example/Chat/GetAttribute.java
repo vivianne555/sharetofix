@@ -17,7 +17,7 @@ public class GetAttribute {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.bidv.net/bidvdirectsit");
-        List<WebElement> name = driver.findElements(By.xpath(Locator.USER_NAME));
+        List<WebElement> name = driver.findElements(By.xpath(Locator.USER_NAME.toString()));
             if(name.equals("USER_NAME")){
                 System.out.println("Đây là thẻ input");
             };

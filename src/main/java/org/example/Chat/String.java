@@ -1,22 +1,29 @@
 package org.example.Chat;
-import java.util.concurrent.TimeUnit;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.By;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 public class String {
     WebDriver driver;
     WebElement element;
-    String projectPath = System.getProperty("user.dir");
+    java.lang.String projectPath = System.getProperty("user.dir");
     @BeforeClass
     public void beforeClass(){
-        System.setProperty("webdriver.gecko.driver"+ "\\browserDrivers\\geckodriver.exe");
+        System.getProperty("webdriver.gecko.driver", projectPath+ "\\browserDrivers\\geckodriver.exe");
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().window().maximize();
+
     }
     @Test
+    public void TC_02_Title(){
 
+    }
 }
